@@ -9,6 +9,6 @@ LED and pin 1 every second.
 # Links
 * [introducing trinket](https://learn.adafruit.com/introducing-trinket/)
 * [working example](https://pauhanafun.blogspot.com/2014/02/avr-gcc-adafruit-trinket-example.html)
-* [avr_libc docs](https://www.nongnuorg/avr-libc/user-manual/modules.html)
+* [avr_libc docs](https://www.nongnu.org/avr-libc/user-manual/modules.html)
 * [avrdude github](https://github.com/avrdudes/avrdude)
 * [ATtiny datasheet](https://ww1.microchip.com/downloads/en/devicedoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf)
