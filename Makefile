@@ -30,6 +30,9 @@ $(HEX): $(OUT)
 $(EE_HEX): $(OUT)
 	avr-objcopy -j .eeprom --change-section-lma .eeprom=0 -O ihex $< $@
 
+erase_and_program:
+	avrdude -c usbtiny -p attiny85 -U flash:w:$(HEX)
+
 program:
 	avrdude -c usbtiny -p attiny85 -D -U flash:w:$(HEX)
 
