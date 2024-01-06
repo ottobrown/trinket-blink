@@ -1,5 +1,3 @@
-# This was written by ChatGPT
-
 # Source and object files
 SRC = blink.c
 OBJ = blink.o
@@ -35,6 +33,9 @@ erase_and_program:
 
 program:
 	avrdude -c usbtiny -p attiny85 -D -U flash:w:$(HEX)
+
+erase:
+	avrdude -c usbtiny -p attiny85 -e
 
 clean:
 	rm -f $(OBJ) $(OUT) $(HEX) $(EE_HEX) $(LST) $(MAP)
